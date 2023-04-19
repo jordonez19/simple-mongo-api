@@ -1,0 +1,31 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "Creating a rest api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "build": "node src --out-dir build",
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+  "keywords": [],
+  "author": "XaviDEv",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.1.5",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.21.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22"
+  }
+}
